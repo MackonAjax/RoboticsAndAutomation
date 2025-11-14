@@ -1,0 +1,192 @@
+/* Light theme — minimal, responsive */
+:root{
+  --bg:#f7f9fb;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --accent:#2563eb;
+  --text:#0f1724;
+  --container:1100px;
+  --radius:10px;
+}
+
+*{
+    box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+}
+
+.container{width:min(94%,var(--container));margin:0 auto}
+
+/* Header */
+.site-header{
+  position:sticky;top:0;background:var(--card);box-shadow:0 2px 8px rgba(15,23,36,0.06);z-index:40;
+}
+.header-inner{display:flex;align-items:center;gap:1rem;height:64px}
+.brand{font-weight:700;color:var(--text);text-decoration:none}
+.main-nav{margin-left:auto;display:flex;align-items:center;gap:0.5rem}
+.nav-toggle{display:none;background:transparent;border:0;font-size:1.25rem;cursor:pointer}
+.nav-list{list-style:none;display:flex;gap:0.25rem;padding:0;margin:0;align-items:center}
+.nav-link{display:inline-block;padding:8px 12px;border-radius:8px;color:var(--muted);text-decoration:none;font-weight:600}
+.nav-link:hover{color:var(--text);background:rgba(37,99,235,0.06)}
+.nav-link.active{color:var(--accent);background:rgba(37,99,235,0.08);box-shadow:0 6px 20px rgba(37,99,235,0.06)}
+
+/* Main */
+.main-content{padding:40px 0;min-height:calc(100vh - 160px)}
+.card{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 6px 20px rgba(15,23,36,0.04)}
+.hero{display:grid;gap:10px;padding:28px;border-radius:12px;background:linear-gradient(180deg,rgba(37,99,235,0.04),transparent)}
+h1{margin:0;font-size:clamp(1.4rem,3.2vw,2.6rem)}
+.lead{color:var(--muted);max-width:60ch}
+
+
+/* banner */
+.banner{
+  background-color: rgb(65, 64, 64);
+  min-height: 60vh;
+  background-image: url('images/OIP.webp');
+  background-blend-mode: multiply;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-weight: 50; */
+}
+
+/* whats robotics */
+.whats-robotics{
+  background-color: rgb(231, 231, 254);
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 20vh;
+  min-height: 80vh;
+  padding: 5vh 5vw;
+}
+
+/* history */
+.history{
+  background-color: white;
+  font-size: 1.5rem;
+  padding: 5vh 5vw;
+  text-align: center;
+  padding-top: 20vh;
+  min-height: 80vh;
+}
+
+/* applications */
+.applications{
+  background-color: rgb(214, 227, 217);
+  font-size: 1.5rem;
+  padding: 5vh 5vw;
+  text-align: center;
+  padding-top: 20vh;
+  min-height: 80vh;
+}
+
+/* advantages */
+.advantages{
+  background-color: aliceblue;
+  font-size: 1.5rem;
+  padding: 5vh 5vw;
+  text-align: center;
+  padding-top: 20vh;
+  min-height: 80vh;
+}
+
+/* challenges */
+/* .challenges{
+  background-color: white;
+  font-size: 1.5rem;
+  padding: 5vh 5vw;
+  text-align: center;
+  padding-top: 20vh;
+  min-height: 80vh;
+} */
+
+/* friends say */
+.friends-say{
+  background-color: rgb(240, 255, 241);
+  font-size: 1.5rem;
+  padding: 5vh 5vw;
+  text-align: center;
+  padding-top: 20vh;
+  min-height: 80vh;
+}
+/* humanoid robots */
+.humanoid-robots{
+  background-color: white;
+  font-size: 1.5rem;
+  padding: 5vh 5vw;
+  text-align: center;
+  padding-top: 20vh;
+  min-height: 80vh;
+}
+
+.testimonials {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.testimonials h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.testimonials-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.testimonial-card {
+  border: 1px solid #d0d0d0;
+  padding: 25px;
+  border-radius: 12px;
+  background: #fff;
+  transition: 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.testimonial-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.testimonial-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+
+/* Footer */
+.site-footer{padding:20px 0;color:var(--muted);border-top:1px solid rgba(15,23,36,0.04)}
+
+/* Responsive */
+@media (max-width:900px){
+  .nav-list{display:none;position:absolute;right:12px;top:64px;background:var(--card);padding:8px;border-radius:10px;flex-direction:column;min-width:180px;box-shadow:0 8px 30px rgba(15,23,36,0.08)}
+  .nav-toggle{display:inline-block}
+  .main-nav.open .nav-list{display:flex}
+}
