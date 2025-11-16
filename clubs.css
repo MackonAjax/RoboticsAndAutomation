@@ -1,0 +1,198 @@
+/* header.css */
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #00000b 0%, #596368 100%);
+  color: white;
+}
+
+.header h1 {
+  font-size: 48px;
+  margin: 0 0 20px;
+  line-height: 1.2;
+}
+
+.header p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0;
+  color: rgba(255,255,255,0.9);
+}
+
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 32px;
+  }
+  .header p {
+    font-size: 16px;
+  }
+}
+
+
+/* signup.css */
+.signup {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  max-width: 400px;
+  margin: 40px auto;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+.signup h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #1e293b;
+}
+
+.signup form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.signup input {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #1e293b;
+}
+
+.signup button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #0ea5e9, #3b82f6);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+.signup button:hover {
+  background: linear-gradient(90deg, #3b82f6, #0ea5e9);
+}
+
+.signup .message {
+  text-align: center;
+  font-size: 14px;
+  color: #64748b;
+  margin-top: 8px;
+}
+
+
+
+
+/* projects.css */
+.projects-section {
+max-width: 1100px;
+margin: 40px auto;
+padding: 0 20px;
+}
+
+.projects-section h2 {
+font-size: 24px;
+margin-bottom: 16px;
+color: #1e293b;
+text-align: center;
+}
+
+.projects-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+gap: 20px;
+}
+
+.project-card {
+background: #ffffff;
+padding: 20px;
+border-radius: 14px;
+box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+transform: translateY(-4px);
+box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.project-card h3 {
+margin: 0 0 8px;
+font-size: 18px;
+color: #0ea5e9;
+}
+
+.project-card p {
+margin: 0 0 12px;
+color: #64748b;
+font-size: 14px;
+}
+
+.project-card .meta {
+font-size: 13px;
+color: #64748b;
+display: flex;
+justify-content: space-between;
+}
+
+
+
+/* borrowed_items.css */
+.borrowed-section {
+max-width: 1100px;
+margin: 40px auto;
+padding: 0 20px;
+}
+
+.borrowed-section h2 {
+font-size: 24px;
+margin-bottom: 16px;
+color: #1e293b;
+text-align: center;
+}
+
+.borrowed-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+gap: 20px;
+}
+
+.borrowed-card {
+background: #ffffff;
+padding: 18px;
+border-radius: 14px;
+box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.borrowed-card:hover {
+transform: translateY(-4px);
+box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.borrowed-card h3 {
+margin: 0 0 6px;
+font-size: 16px;
+color: #0ea5e9;
+}
+
+.borrowed-card p {
+margin: 0 0 8px;
+color: #64748b;
+font-size: 14px;
+}
+
+.borrowed-card .meta {
+font-size: 13px;
+color: #64748b;
+display: flex;
+justify-content: space-between;
+}
+

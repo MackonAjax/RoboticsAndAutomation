@@ -68,6 +68,23 @@ h1{margin:0;font-size:clamp(1.4rem,3.2vw,2.6rem)}
   padding: 5vh 5vw;
 }
 
+.robotics-club{
+  background-color: rgb(53, 54, 53);
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  padding: 5vh 5vw;
+  padding-top: 20vh;
+  min-height: 84vh;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-image: url('images/th.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
 /* history */
 .history{
   background-color: white;

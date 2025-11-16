@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotics Club</title>
+
+    <link rel="stylesheet" href="clubs.css">
+</head>
+<body>
+
+    <section class="header">
+    <h1>Kyambogo Robotics Club</h1>
+    <p>Building the future with code, circuits, and creativity. Join us to innovate, learn, and compete in the world of robotics!</p>
+    </section>
+
+    <section class="signup">
+        <h2>Join the Club</h2>
+        <form id="signupForm">
+            <input type="text" id="first_name" placeholder="First Name" required />
+            <input type="text" id="last_name" placeholder="Last Name" required />
+            <input type="email" id="email" placeholder="Email" required />
+            <button type="submit">Sign Up</button>
+        </form>
+        <div class="message" id="signupMessage"></div>
+    </section>
+
+
+    <section class="projects-section">
+        <h2>Active Projects</h2>
+        <div class="projects-grid" id="projectsGrid">
+            <div class="project-card">
+            <h3>Autonomous Line Follower</h3>
+            <p>A robot that follows a predefined path using sensors.</p>
+            <div class="meta"><span>Start: 2025-11-01</span><span>End: 2025-12-15</span></div>
+            <div class="meta"><span>Members: 4</span></div>
+            </div>
+            <div class="project-card">
+            <h3>Robotic Arm for Pick & Place</h3>
+            <p>Designing a robotic arm to automate material handling tasks.</p>
+            <div class="meta"><span>Start: 2025-10-15</span><span>End: 2025-12-30</span></div>
+            <div class="meta"><span>Members: 5</span></div>
+            </div>
+            <div class="project-card">
+            <h3>Drone Surveillance System</h3>
+            <p>Developing a drone capable of autonomous monitoring and recording.</p>
+            <div class="meta"><span>Start: 2025-11-05</span><span>End: 2026-01-20</span></div>
+            <div class="meta"><span>Members: 3</span></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="borrowed-section">
+        <h2>Borrowed Club Items</h2>
+        <div class="borrowed-grid" id="itemsGrid">
+            <div class="borrowed-card">
+            <h3>Arduino Starter Kit</h3>
+            <p>Borrower: Derrick Ajax</p>
+            <div class="meta"><span>Borrowed: 2025-11-01</span><span>Return: 2025-11-10</span></div>
+            </div>
+            <div class="borrowed-card">
+            <h3>Raspberry Pi 4</h3>
+            <p>Borrower: Haggai Ejiet</p>
+            <div class="meta"><span>Borrowed: 2025-11-03</span><span>Return: 2025-11-15</span></div>
+            </div>
+            <div class="borrowed-card">
+            <h3>Micro Servo Motors</h3>
+            <p>Borrower: Marina Kansiime</p>
+            <div class="meta"><span>Borrowed: 2025-11-05</span><span>Return: 2025-11-12</span></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="javascript.js"></script>
+</body>
+</html>
