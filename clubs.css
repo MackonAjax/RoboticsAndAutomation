@@ -208,11 +208,12 @@ justify-content: space-between;
   margin-top: 20px;
   border: 1px solid #0f0f0f;
   border-radius: 12px;
-  height: 10vh;
+  height: 40vh;
   color: white;
 }
 
 .admin-panel a{
   text-decoration: none;
   color: rgb(13, 186, 114);
+  /* height: 40vh; */
 }
