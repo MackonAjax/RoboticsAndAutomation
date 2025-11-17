@@ -11,7 +11,7 @@ document.getElementById('signupForm').addEventListener('submit', async (e) => {
   }
 
   try {
-    const res = await fetch('http://127.0.0.1:8000/create_member/', {
+    const res = await fetch('https://roboticsclubbackend.onrender.com/create_member/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ first_name, last_name, email })

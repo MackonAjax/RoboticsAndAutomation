@@ -1,4 +1,8 @@
-/* header.css */
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* header */
 .header {
   display: flex;
   flex-direction: column;
@@ -196,3 +200,19 @@ display: flex;
 justify-content: space-between;
 }
 
+.admin-panel{
+  background-color: rgb(35, 35, 37);
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2vh 2vw;
+  margin-top: 20px;
+  border: 1px solid #0f0f0f;
+  border-radius: 12px;
+  height: 10vh;
+  color: white;
+}
+
+.admin-panel a{
+  text-decoration: none;
+  color: rgb(13, 186, 114);
+}
